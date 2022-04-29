@@ -65,7 +65,7 @@
     const style = getComputedStyle(element);
     let animationTime = parseFloat(style.transitionDuration.slice(0, -1));
     animationTime *= 1000;
-    if(!audio) return; // stop the function from running all together
+    if(!audio) return;
     audio.currentTime = 0;
     audio.play();
     key.classList.add(`playing`);
